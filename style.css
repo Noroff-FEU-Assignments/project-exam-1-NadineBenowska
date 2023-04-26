@@ -63,21 +63,9 @@ a.active, a:hover {
 }
 
 main {
-    background-color: #DC9D88;
+    background-color: white;
     height: 100vh;
 }
-
-.welcome {
-    background-image: url("#");
-    height: 75vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: black;
-    background-position: left;
-    position: relative;
-}
-
 @media (max-width: 952px) {
     label.logo {
         font-size: 30px;
