@@ -1,40 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Dinner</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body>
-    <hader>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbutton">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">EasyFood</label>
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="blogposts.html">Blog Posts</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
-    </hader>
-    <main>
-        <section class="welcome">
-            <div class="content">
-                <h1>Conscious Coffee is the place where you can get flavorful coffee strains from global elite
-                    brands
-                    and
-                    roasters at very affordable price.
-                </h1>
-            </div>
-        </section>
-    </main>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EasyFood</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+            <div class="container flex">
+                <a href="index.html" class="site-brand">Easy<span>Food</span></a>
+
+                <button type="button" id="navbar-show-btn" class="flex">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div id="navbar-collapse">
+                    <button type="button" id="navbar-close-btn" class="flex">
+                        <i class="fas fa-times"></i>
+                    </button>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blogposts.html" class="nav-link">Blog Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
+    <header class="flex">
+        <div class="container">
+            <div class="header-title">
+                <h1>Welcome to EasyFood</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus at alias quam illum id quos velit ut optio quo, mollitia ad vero quae illo similique omnis consectetur eos aliquam odio!</p>
+            </div>
+            <div class="header-form">
+                <h2>Choose your Recipe</h2>
+                <form class="flex">
+                    <input type="text" class="form-control" placeholder="Recipe Name">
+                    <input type="submit" class="btn" value="Search">
+                </form>
+                
+            </div>
+        </div>
+
+    </header>
+    <main>
+       <section id="featured" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Here is some of the best recipies</span>
+                <h2 class="lg-title">The best recipies</h2>
+            </div>
+            <div class="featured-row">
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Chicken Hamburger.jpeg" alt="recipie">
+                </div>
+                <div class="featured-item-content">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos totam obcaecati quidem fugiat animi qui quo assumenda quia vero perspiciatis amet deleniti vel maiores minima, doloribus asperiores eius repellendus. Ab.</p>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Burritos.jpeg" alt="recipie">
+                </div>
+                <div class="featured-item-content">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos totam obcaecati quidem fugiat animi qui quo assumenda quia vero perspiciatis amet deleniti vel maiores minima, doloribus asperiores eius repellendus. Ab.</p>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Cauliflowe and halloumi rice.jpeg" alt="recipie">
+                </div>
+                <div class="featured-item-content">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos totam obcaecati quidem fugiat animi qui quo assumenda quia vero perspiciatis amet deleniti vel maiores minima, doloribus asperiores eius repellendus. Ab.</p>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Cherry Tomato CousCous Salad.jpeg" alt="recipie">
+                </div>
+                <div class="featured-item-content">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos totam obcaecati quidem fugiat animi qui quo assumenda quia vero perspiciatis amet deleniti vel maiores minima, doloribus asperiores eius repellendus. Ab.</p>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Cheesy broccoli pasta.jpeg" alt="recipie">
+                </div>
+                <div class="featured-item-content">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos totam obcaecati quidem fugiat animi qui quo assumenda quia vero perspiciatis amet deleniti vel maiores minima, doloribus asperiores eius repellendus. Ab.</p>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Cheese cake.jpeg" alt="recipie">
+                </div>
+                <div class="featured-item-content">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos totam obcaecati quidem fugiat animi qui quo assumenda quia vero perspiciatis amet deleniti vel maiores minima, doloribus asperiores eius repellendus. Ab.</p>
+                </div>
+            </div>
+        </div>
+       </section>
+    </main>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
