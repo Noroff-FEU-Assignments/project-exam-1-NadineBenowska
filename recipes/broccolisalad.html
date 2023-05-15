@@ -9,13 +9,13 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>EasyFood</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar-recipe">
         <div class="container flex">
-            <a href="index.html" class="site-brand">Easy<span>Food</span></a>
+            <a href="/index.html" class="site-brand-recipe">Easy<span>Food</span></a>
 
             <button type="button" id="navbar-show-btn" class="flex">
                 <i class="fas fa-bars"></i>
@@ -27,59 +27,58 @@
 
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="/index.html" class="nav-link-recipe">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
+                        <a href="/about.html" class="nav-link-recipe">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="blogposts.html" class="nav-link">Blog Posts</a>
+                        <a href="/blogposts.html" class="nav-link-recipe">Blog Posts</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="/contact.html" class="nav-link-recipe">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <header class="flex-contact">
-        <div class="container">
-            <div class="header-title">
-                <h1>Contact Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus at alias quam illum id quos velit
-                    ut optio quo, mollitia ad vero quae illo similique omnis consectetur eos aliquam odio!</p>
-            </div>
-        </div>
-    </header>
     <main>
-        <div class="nav-container">
-            <h1>Contact us!</h1>
-            <a class="nav-button" href="index.html">
-                Go home
-            </a>
+        <div class="container-recipe">
+            <article class="recipe">
+                <img src="/images/Broccoli Salad.jpeg" class="img-recipe" alt="recipe">
+                <div class="text-recipe">
+                    <h2 class="h2-recipe">Broccoli Salad</h2>
+                    <p class="text-recipe">
+                        Broccoli Salad is a quick salad full of fresh crisp broccoli, dried cranberries, sunflower
+                        seeds, and bacon bits. It’s all tossed in a really easy creamy homemade dressing.
+                    </p>
+
+                    <h3 class="h3-recipe">Ingredients</h3>
+                    <p>8 cups broccoli cut into bite-sized pieces</p>
+                    <p>⅓ cup red onion diced</p>
+                    <p>½ cup dried cranberries</p>
+                    <p>¼ cup sunflower seeds</p>
+                    <p>½ cup bacon bits</p>
+
+                    <h3 class="h3-recipe">Dressing</h3>
+                    <p>1 cup mayonnaise</p>
+                    <p>3 tablespoons cider vinegar</p>
+                    <p>2 tablespoons sugar</p>
+                    <p>salt & pepper to taste</p>
+
+                    <h3 class="h3-recipe">Directions</h3>
+                    <p>
+                        1. Whisk together dressing ingredients in a medium bowl. Set aside
+                    </p>
+                    <p>
+                        2. Whisk together dressing ingredients in a medium bowl. Set aside
+                    </p>
+                    <p>
+                        3. Refrigerate for at least one hour before serving.
+                    </p>
+                </div>
+            </article>
         </div>
-        <div class="message">Submission successful</div>
-        <form class="contact-us" id="form" type="GET">
-            <label for="name">Full name (required)</label>
-            <input type="text" id="name" name="name" />
-            <div id="fullName-error" class="form-error">*Please fill in full name</div>
-
-            <label for="subject">Subject (minimum 10 characters)</label>
-            <input type="text" id="subject" name="subject" />
-            <div id="subject-error" class="form-error">*Please fill in subject with minimum 10 characters</div>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-            <div id="email-error" class="form-error">*Please fill in a valid email</div>
-
-            <label for="address">Address (Minimum 25 characters)</label>
-            <input type="text" id="address" name="address" />
-            <div id="address-error" class="form-error">*Please fill in your address with minimum 25 characters</div>
-
-            <button class="submit-button">Submit</button>
-            <script src="js/contact.js"></script>
-        </form>
     </main>
     <footer>
         <section class="footer">
